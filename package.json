@@ -1,0 +1,14 @@
+{
+  "name": "ui5-tooling-customtask-sample",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "ui5 build --exclude-task=* --include-task myTask"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ui5/builder": "^1.7.1",
+    "@ui5/cli": "^1.12.1"
+  }
+}

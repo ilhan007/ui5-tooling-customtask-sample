@@ -1,0 +1,23 @@
+specVersion: "1.0"
+type: library
+metadata:
+  name: sample
+builder:
+  customTasks:
+    - name: myTask
+      afterTask: uglify
+  resources:
+    excludes:
+      - "**"
+      - "!**/*.hbs"
+      - "!*.hbs"
+      - "!**/*.lit.js"
+---
+# Task extension
+specVersion: "1.0"
+kind: extension
+type: task
+metadata:
+  name: myTask
+task:
+  path: lib/task.js
